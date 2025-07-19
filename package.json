@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A comprehensive data table component built with shadcn/ui and @tanstack/react-table",
   "main": "index.js",
+  "bin": {
+    "install-data-table": "./bin/install.js"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,9 +13,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tanstack/react-table": "^8.10.7",
     "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-slot": "^1.0.2",
+    "@tanstack/react-table": "^8.21.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",

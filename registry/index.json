@@ -1,0 +1,44 @@
+{
+  "data-table": {
+    "name": "data-table",
+    "type": "components:ui",
+    "description": "A comprehensive data table component with server-side pagination, filtering, and sorting support.",
+    "dependencies": [
+      "@tanstack/react-table",
+      "lucide-react",
+      "date-fns",
+      "react-day-picker"
+    ],
+    "devDependencies": [],
+    "registryDependencies": [
+      "button",
+      "input",
+      "table",
+      "popover",
+      "calendar",
+      "date-picker"
+    ],
+    "files": [
+      {
+        "name": "data-table/data-table.tsx",
+        "type": "components:ui"
+      },
+      {
+        "name": "data-table/data-table-column-header.tsx",
+        "type": "components:ui"
+      },
+      {
+        "name": "data-table/data-table-pagination.tsx",
+        "type": "components:ui"
+      },
+      {
+        "name": "data-table/types.ts",
+        "type": "components:ui"
+      },
+      {
+        "name": "data-table/index.ts",
+        "type": "components:ui"
+      }
+    ]
+  }
+}

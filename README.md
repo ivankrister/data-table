@@ -16,22 +16,71 @@ A comprehensive data table component built with shadcn/ui and @tanstack/react-ta
 
 ## Installation
 
-### Option 1: Install from npm (Recommended)
+### Option 1: Using npx (Recommended - Most Shadcn-like)
 
-Install the package directly from GitHub:
+Install the data-table component using npx:
 
 ```bash
-npm install ivankrister/data-table
+npx shadcn-data-table@latest
 ```
 
-This will install the complete data-table component with all necessary files and dependencies.
+This command will:
+- Check if you're in a shadcn/ui project
+- Install all required dependencies
+- Install required shadcn/ui components automatically
+- Create the component directory structure
+- Provide clear instructions for the final setup steps
 
-### Option 2: Manual Installation
+### Option 2: Using the Installation Script
 
-If you prefer to install manually, install the required dependencies:
+Run the installation script to automatically set up the data-table component:
 
 ```bash
-npm install @tanstack/react-table @radix-ui/react-popover @radix-ui/react-slot class-variance-authority clsx date-fns lucide-react react-day-picker tailwind-merge
+curl -fsSL https://raw.githubusercontent.com/ivankrister/shadcn-data-table/main/install-data-table.sh | bash
+```
+
+Or download and run locally:
+
+```bash
+wget https://raw.githubusercontent.com/ivankrister/shadcn-data-table/main/install-data-table.sh
+chmod +x install-data-table.sh
+./install-data-table.sh
+```
+
+This will:
+- Install all required dependencies
+- Install required shadcn/ui components (button, input, table, popover, calendar)
+- Create the component directory structure
+- Provide instructions for copying the component files
+
+### Option 3: Manual Installation (Shadcn Style)
+
+1. Install the required dependencies:
+
+```bash
+npm install @tanstack/react-table lucide-react date-fns react-day-picker
+```
+
+2. Install the required shadcn/ui components:
+
+```bash
+npx shadcn@latest add button input table popover calendar
+```
+
+3. Copy the component files to your project:
+
+```bash
+# Create the data-table directory
+mkdir -p components/ui/data-table
+
+# Copy all files from this repository's components/ui/data-table/ directory
+# to your project's components/ui/data-table/ directory
+```
+
+4. Copy the date-picker component if you don't have it:
+
+```bash
+# Copy components/ui/date-picker.tsx to your project
 ```
 
 For Inertia.js projects, also install:
@@ -39,7 +88,25 @@ For Inertia.js projects, also install:
 npm install @inertiajs/react
 ```
 
-Then copy the component files from this repository to your project following the project structure below.
+## How This Component Acts Like Other Shadcn Components
+
+This data-table component now follows the same patterns as other shadcn/ui components:
+
+✅ **CLI Installation**: Use `npx shadcn-data-table@latest` just like `npx shadcn-ui@latest add button`
+
+✅ **Component Structure**: Lives in `components/ui/data-table/` following shadcn conventions
+
+✅ **Dependency Management**: Automatically installs required shadcn components and npm packages
+
+✅ **Import Pattern**: Import using `@/components/ui/data-table` alias
+
+✅ **TypeScript Support**: Full TypeScript definitions included
+
+✅ **Customizable**: Built with Tailwind CSS and follows shadcn design patterns
+
+✅ **Registry Support**: Includes registry configuration for potential future shadcn integration
+
+The component integrates seamlessly with your existing shadcn/ui setup and follows all the same conventions you're already familiar with.
 
 ## Project Structure
 
