@@ -19,7 +19,7 @@ try {
 
     // Install required shadcn components
     console.log('🎨 Installing required shadcn components...');
-    execSync('npx shadcn@latest add button input table popover calendar', { stdio: 'inherit' });
+    execSync('npx shadcn@latest add button input table popover calendar --overwrite', { stdio: 'inherit' });
 
     // Create data-table directory
     console.log('📁 Creating component directory...');

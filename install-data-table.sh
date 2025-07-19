@@ -17,7 +17,7 @@ npm install @tanstack/react-table lucide-react date-fns react-day-picker
 
 # Install required shadcn components
 echo "🎨 Installing required shadcn components..."
-npx shadcn@latest add button input table popover calendar
+npx shadcn@latest add button input table popover calendar --overwrite
 
 # Create data-table directory
 echo "📁 Creating component directory..."

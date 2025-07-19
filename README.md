@@ -27,7 +27,7 @@ npx shadcn-data-table@latest
 This command will:
 - Check if you're in a shadcn/ui project
 - Install all required dependencies
-- Install required shadcn/ui components automatically
+- Install required shadcn/ui components automatically (will overwrite existing components)
 - Create the component directory structure
 - Provide clear instructions for the final setup steps
 
@@ -49,7 +49,7 @@ chmod +x install-data-table.sh
 
 This will:
 - Install all required dependencies
-- Install required shadcn/ui components (button, input, table, popover, calendar)
+- Install required shadcn/ui components (button, input, table, popover, calendar) - will overwrite existing components
 - Create the component directory structure
 - Provide instructions for copying the component files
 
